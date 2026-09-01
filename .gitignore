@@ -1,0 +1,28 @@
+# Build artifacts
+build/
+build-*/
+*.obj
+*.o
+*.pdb
+*.ilk
+*.lib
+*.exe
+CMakeCache.txt
+CMakeFiles/
+.ninja_*
+cmake_install.cmake
+
+# Test / proof artifacts
+*.marker
+*.portfile
+*.state
+*.bin
+coord2.portfile
+proof_*.marker
+test_state.bin
+
+# Editor / OS
+.vs/
+.vscode/
+*.user
+Thumbs.db

@@ -16,6 +16,7 @@ static double ms_per(std::uint64_t count, std::uint64_t ns) {
 }
 
 int main() {
+    std::setvbuf(stdout, nullptr, _IONBF, 0);
     auto rt = Runtime::create_synthetic([] {
         backend::SyntheticConfig c; c.node_count = 2; c.processors_per_node = 8; return c; }());
     rt->discover();
